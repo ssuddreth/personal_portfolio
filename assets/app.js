@@ -1,4 +1,5 @@
 const filter_btns = document.querySelectorAll(".filter-btn");
+const gridItem = document.querySelector('grid-item');
 const skills_wrap = document.querySelector(".skills");
 const skills_bars = document.querySelectorAll(".skill-progress");
 const records_wrap = document.querySelector(".records");
@@ -14,22 +15,9 @@ footer_input.addEventListener("blur", () => {
     footer_input.classList.remove("focus");
 })
 
-filter_btns.forEach(btn => btn.addEventListener("click", () => {
-    filter_btns.forEach((button) => button.classList.remove('active'));
-    btn.classList.add('active');
+filter_btns.forEach(btn => 
+    btn.classList.add('active'));
 
-    let filterValue = btn.dataset.filter;
-
-    $('.grid').isotope({filter: filterValue});
-
-}));
-
-$('.grid').isotope({
-    // options
-    itemSelector: '.grid-item',
-    layoutMode: 'fitRows',
-    transitionDuration: '0.6s',
-  });
 
   window.addEventListener("scroll", () => {
       skillsEffect();
@@ -68,6 +56,16 @@ $('.grid').isotope({
         setTimeout(updateCount, 400);
     });
   }
+
+  function resetFormTwo() {
+    var frm = document.getElementsByName('contact-me-form')[0];
+    frm.reset();
+    return false;
+  }
+
+  function resetForm() {
+    setTimeout(resetFormTwo, 2000);
+ }
 
   var mySwiper = new Swiper(".swiper-container", {
       speed: 1100, 
