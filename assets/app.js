@@ -9,6 +9,12 @@ const records_numbers = document.querySelectorAll(".number");
 filter_btns.forEach(btn => 
     btn.classList.add('active'));
 
+<<<<<<< HEAD
+=======
+filter_btns.forEach(btn => 
+    btn.classList.add('active'));
+
+>>>>>>> c959eba66d51dfd184d160aab9cb934efe0f9776
 
   window.addEventListener("scroll", () => {
       skillsEffect();
