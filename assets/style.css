@@ -3,7 +3,7 @@
 :root {
     --dark-one: #333;
     --dark-two: #7a7a7a;
-    --main-color: #460eef;
+    --main-color: #228B22;
     --light-one: #fff;
     --light-two: #f9fafb;
     --light-three: #f6f7fb;
@@ -195,7 +195,7 @@ nav .container {
 
 .links a.active:hover {
     color: var(--light-one);
-    background-color: #3509ba;
+    background-color: #71BC78;
 }
 
 .logo img {
@@ -232,7 +232,7 @@ nav .container {
 }
 
 .btn:hover {
-    background-color: #3509ba;
+    background-color: #71BC78;
 }
 
 .header-content .image .img-element {
@@ -245,7 +245,7 @@ nav .container {
 
 .card {
     position: relative;
-    width: 100%;
+    width: 150%;
     max-width: 390px;
     min-height: 520px;
     background-color: var(--light-three);
@@ -374,18 +374,24 @@ nav .container {
 .filter-btn.active {
     background-color: var(--light-one);
     color: var(--main-color);
+    cursor: default;
 }
 
 .grid {
     width: 100%;
     margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-item {
+    position: relative;
     width: 33.33%;
     padding: 1rem 1.2rem;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .gallery-image {
@@ -416,7 +422,7 @@ nav .container {
     left: 0;
     z-index: 2;
     color: var(--light-one);
-    background-color: rgba(27, 57, 250, 0.55);
+    background-color: rgba(113, 188, 120, 0.55);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -509,7 +515,7 @@ nav .container {
     height: 8px;
     width: 70%;
     border-radius: 4px;
-    background-color: #b3d7fb;
+    background-color: #D0F0C0;
     position: relative;
     overflow: hidden;
 }
@@ -553,6 +559,7 @@ nav .container {
 .records .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin: 0;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -701,7 +708,7 @@ nav .container {
 .contact:before {
     top: 0;
     height: 40%;
-    background: url(./images/Amos\ Show.jpg) center center / cover;
+    background: url(./images/living-wall.jpg) center center / cover;
 }
 
 .contact:after {
@@ -1161,6 +1168,7 @@ nav .container {
   
     .grid-item {
       padding: 0.8rem;
+      width: 100%;
     }
   
     .gallery-image {
@@ -1481,7 +1489,7 @@ nav .container {
     }
   
     .grid-item {
-      width: 50%;
+      width: 100%;
     }
   
     .gallery-image {
@@ -1599,6 +1607,10 @@ nav .container {
       padding: 0;
     }
   
+    .footer-services {
+      display: none;
+    }
+
     .footer-input-wrap {
       max-width: 300px;
       margin: 0.95rem auto 0 auto;
